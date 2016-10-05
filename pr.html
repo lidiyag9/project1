@@ -47,6 +47,20 @@ function show_game() {
     c2_elem.style.display = 'none';
     c3_elem.style.display = 'block';
 }
+function check() {
+    x = document.getElementById("q1");
+    if (x.checked) {
+        alert("Yes")
+    } else {
+        alert("No")
+    }
+    ;
+    q3e = document.getElementById("q3");
+    answer = q3e.value;
+    rese = document.getElementById('res');
+    rese.innerHTML= "Вы уверены, что " + answer + '?';
+
+}
 
 </script>
 
@@ -122,7 +136,23 @@ function show_game() {
 
 <div id="c2" style="display:none"><<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5590101.328206789!2d0.56985045420019!3d46.83302596936415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1474995189591" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>></div>
 
-<div id="c3" style="display:none">Cool game soon</div>
+<div id="c3" style="display:none">Cool game soon
+<body>
+<input type=checkbox id="q1"
+<label for="g1">прививка от гриппа?</label> <br>
+2+2=
+<input type="radio" name="q2"> 3
+<input type="radio" name="q2"> 4
+<input type="radio" name="q2"> 5<br>
+сколько?
+<input type=text id="q3" />
+<input type=button onclick="check()" value="Check" />
+<div id="res"> Ответ </div>
+
+</div>
+</body>
+
+
 
 
 
