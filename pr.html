@@ -6,9 +6,16 @@
    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
-    Map will be here
-    <div id="map" style="width: 600px; height: 400px; background: pink;">
-    </div>
+<script type="text/javascript">
+    ymaps.ready(init);
+    var myMap;
+
+    function init() {
+        myMap = new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 7
+        });
+    }</script>
     <h1>
         Liberté, Égalité, Fraternité
     </h1>
@@ -115,7 +122,9 @@
                     западных склонах гор этот показатель может достигать отметки в более чем 2000 мм.
                 </div>
                 <div id="c2" style="display: none">
-                Map will be here
+    <div id="map" style="width: 600px; height: 400px; background: pink;">
+    </div>
+
                 </div>
 
                 <div id="c3" style="display: none">
@@ -141,10 +150,5 @@
             </td>
         </tr>
     </table>
-<script type="text/javascript">
-    var map = new ymaps.Map("map", {
-        center: [55.76, 37.64],
-        zoom: 7
-    });
-</script></body>
+</body>
 </html>
