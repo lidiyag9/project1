@@ -1,4 +1,3 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <body>
     <svg height="700" width="1000">
@@ -10,7 +9,18 @@ krovat'
  <line x1="150" y1="500" x2="500" y2="500" style="stroke:brown; stroke-width:15" />
  <rect x="157" y="400" width="335" height="95" style="fill:rgb(0,0,255);" />
  lustra
-        <circle cx="550" cy="150" r="40" stroke="black" stroke-width="0" fill="yellow" />
+        <circle cx="550" cy="150" r="40" fill="orange">
+          <animate attributeName="cx" attributeType="XML" 
+               begin="0;graphics.click"
+               values="550;550;550;550;550" 
+               dur="20s"
+               calcMode="linear" />
+      <animate attributeName="fill" attributeType="XML"  
+               begin="0;graphics.click"
+               dur="20s" 
+               values="orange;yellow;white;yellow;orange;white;"
+               calcMode="linear" />
+    </circle>
  <line x1="550" y1="110" x2="550" y2="0" style="stroke:black; stroke-width:5" />
 knigi
         <line x1="100" y1="180" x2="300" y2="180" style="stroke:rosybrown; stroke-width:15" />
